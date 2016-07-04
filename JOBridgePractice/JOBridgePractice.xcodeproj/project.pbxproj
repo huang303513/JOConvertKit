@@ -15,6 +15,9 @@
 		4DE0E5B51D264D260051FF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0E5B31D264D260051FF02 /* LaunchScreen.storyboard */; };
 		4DE0E5C01D264D260051FF02 /* JOBridgePracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0E5BF1D264D260051FF02 /* JOBridgePracticeTests.m */; };
 		4DE0E5CB1D264D260051FF02 /* JOBridgePracticeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0E5CA1D264D260051FF02 /* JOBridgePracticeUITests.m */; };
+		4DE0E5DB1D2A329E0051FF02 /* JOBJavaScriptCoreContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0E5DA1D2A329E0051FF02 /* JOBJavaScriptCoreContext.m */; };
+		4DE0E5E11D2A336D0051FF02 /* JOBBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0E5E01D2A336D0051FF02 /* JOBBridge.m */; };
+		4DE0E5E31D2A6FB40051FF02 /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0E5E21D2A6FB40051FF02 /* bridge.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		4DE0E5C61D264D260051FF02 /* JOBridgePracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JOBridgePracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE0E5CA1D264D260051FF02 /* JOBridgePracticeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOBridgePracticeUITests.m; sourceTree = "<group>"; };
 		4DE0E5CC1D264D260051FF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE0E5D91D2A329E0051FF02 /* JOBJavaScriptCoreContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOBJavaScriptCoreContext.h; sourceTree = "<group>"; };
+		4DE0E5DA1D2A329E0051FF02 /* JOBJavaScriptCoreContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOBJavaScriptCoreContext.m; sourceTree = "<group>"; };
+		4DE0E5DD1D2A331E0051FF02 /* JOBContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOBContext.h; sourceTree = "<group>"; };
+		4DE0E5DE1D2A33360051FF02 /* JOBExport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOBExport.h; sourceTree = "<group>"; };
+		4DE0E5DF1D2A336D0051FF02 /* JOBBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOBBridge.h; sourceTree = "<group>"; };
+		4DE0E5E01D2A336D0051FF02 /* JOBBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOBBridge.m; sourceTree = "<group>"; };
+		4DE0E5E21D2A6FB40051FF02 /* bridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,8 @@
 		4DE0E5A41D264D250051FF02 /* JOBridgePractice */ = {
 			isa = PBXGroup;
 			children = (
+				4DE0E5E21D2A6FB40051FF02 /* bridge.js */,
+				4DE0E5D81D2A32630051FF02 /* JOBridgeKit */,
 				4DE0E5A81D264D250051FF02 /* AppDelegate.h */,
 				4DE0E5A91D264D250051FF02 /* AppDelegate.m */,
 				4DE0E5AB1D264D250051FF02 /* ViewController.h */,
@@ -138,6 +150,19 @@
 				4DE0E5CC1D264D260051FF02 /* Info.plist */,
 			);
 			path = JOBridgePracticeUITests;
+			sourceTree = "<group>";
+		};
+		4DE0E5D81D2A32630051FF02 /* JOBridgeKit */ = {
+			isa = PBXGroup;
+			children = (
+				4DE0E5D91D2A329E0051FF02 /* JOBJavaScriptCoreContext.h */,
+				4DE0E5DA1D2A329E0051FF02 /* JOBJavaScriptCoreContext.m */,
+				4DE0E5DD1D2A331E0051FF02 /* JOBContext.h */,
+				4DE0E5DE1D2A33360051FF02 /* JOBExport.h */,
+				4DE0E5DF1D2A336D0051FF02 /* JOBBridge.h */,
+				4DE0E5E01D2A336D0051FF02 /* JOBBridge.m */,
+			);
+			path = JOBridgeKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE0E5B51D264D260051FF02 /* LaunchScreen.storyboard in Resources */,
+				4DE0E5E31D2A6FB40051FF02 /* bridge.js in Resources */,
 				4DE0E5B21D264D260051FF02 /* Assets.xcassets in Resources */,
 				4DE0E5B01D264D260051FF02 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE0E5AD1D264D250051FF02 /* ViewController.m in Sources */,
+				4DE0E5E11D2A336D0051FF02 /* JOBBridge.m in Sources */,
+				4DE0E5DB1D2A329E0051FF02 /* JOBJavaScriptCoreContext.m in Sources */,
 				4DE0E5AA1D264D250051FF02 /* AppDelegate.m in Sources */,
 				4DE0E5A71D264D250051FF02 /* main.m in Sources */,
 			);
@@ -498,6 +526,7 @@
 				4DE0E5D11D264D260051FF02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE0E5D21D264D260051FF02 /* Build configuration list for PBXNativeTarget "JOBridgePracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +535,7 @@
 				4DE0E5D41D264D260051FF02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE0E5D51D264D260051FF02 /* Build configuration list for PBXNativeTarget "JOBridgePracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +544,7 @@
 				4DE0E5D71D264D260051FF02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
