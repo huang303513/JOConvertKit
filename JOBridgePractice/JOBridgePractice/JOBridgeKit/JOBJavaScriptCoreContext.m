@@ -113,6 +113,8 @@ NSString *JOBJSONStringify(id jsonObject, NSError **error){
     return self;
 }
 
+
+
 /**
  *  执行js文件
  *
@@ -120,7 +122,7 @@ NSString *JOBJSONStringify(id jsonObject, NSError **error){
  *  @param sourceURL
  *  @param onComplete 执行完毕的回调函数
  */
--(void)execScript:(NSData *)script sourceURL:(NSURL *)sourceURL onComplete:(__autoreleasing JOBContextCompleteBlock )onComplete{
+-(void)execScript:(NSData *)script sourceURL:(NSURL *)sourceURL onComplete:(JOBContextCompleteBlock)onComplete{
     NSMutableData * nullTerminatedScript = [NSMutableData dataWithCapacity:script.length + 1];
     [nullTerminatedScript appendData:script];
     [nullTerminatedScript appendBytes:"" length:1];

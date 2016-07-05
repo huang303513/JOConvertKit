@@ -12,5 +12,6 @@
 @interface JOBBridge : NSObject
 @property(nonatomic, strong, readonly) id<JOBContext> context;
 -(instancetype)initWithContext:(id<JOBContext>) context;
-
+-(void)mapInstance:(id<JOBExport>)instance moduleName:(NSString *)moduleName;
+-(void)triggerEvent:(id<JOBExport>)instance name:(NSString *)name data:(id)data;
 @end
