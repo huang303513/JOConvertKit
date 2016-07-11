@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D235A4B1D3342AB00CE4456 /* JOBTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D235A4A1D3342AB00CE4456 /* JOBTest.m */; };
+		4D235A4E1D3342BB00CE4456 /* JOBApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D235A4D1D3342BB00CE4456 /* JOBApp.m */; };
+		4D235A501D33450F00CE4456 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 4D235A4F1D33450F00CE4456 /* main.js */; };
 		4DE0E5A71D264D250051FF02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0E5A61D264D250051FF02 /* main.m */; };
 		4DE0E5AA1D264D250051FF02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0E5A91D264D250051FF02 /* AppDelegate.m */; };
 		4DE0E5AD1D264D250051FF02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0E5AC1D264D250051FF02 /* ViewController.m */; };
@@ -38,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D235A491D3342AB00CE4456 /* JOBTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOBTest.h; sourceTree = "<group>"; };
+		4D235A4A1D3342AB00CE4456 /* JOBTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOBTest.m; sourceTree = "<group>"; };
+		4D235A4C1D3342BB00CE4456 /* JOBApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOBApp.h; sourceTree = "<group>"; };
+		4D235A4D1D3342BB00CE4456 /* JOBApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOBApp.m; sourceTree = "<group>"; };
+		4D235A4F1D33450F00CE4456 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		4DE0E5A21D264D250051FF02 /* JOBridgePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JOBridgePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE0E5A61D264D250051FF02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DE0E5A81D264D250051FF02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,7 +119,6 @@
 		4DE0E5A41D264D250051FF02 /* JOBridgePractice */ = {
 			isa = PBXGroup;
 			children = (
-				4DE0E5E21D2A6FB40051FF02 /* bridge.js */,
 				4DE0E5D81D2A32630051FF02 /* JOBridgeKit */,
 				4DE0E5A81D264D250051FF02 /* AppDelegate.h */,
 				4DE0E5A91D264D250051FF02 /* AppDelegate.m */,
@@ -122,6 +129,12 @@
 				4DE0E5B31D264D260051FF02 /* LaunchScreen.storyboard */,
 				4DE0E5B61D264D260051FF02 /* Info.plist */,
 				4DE0E5A51D264D250051FF02 /* Supporting Files */,
+				4D235A491D3342AB00CE4456 /* JOBTest.h */,
+				4D235A4A1D3342AB00CE4456 /* JOBTest.m */,
+				4D235A4C1D3342BB00CE4456 /* JOBApp.h */,
+				4D235A4D1D3342BB00CE4456 /* JOBApp.m */,
+				4DE0E5E21D2A6FB40051FF02 /* bridge.js */,
+				4D235A4F1D33450F00CE4456 /* main.js */,
 			);
 			path = JOBridgePractice;
 			sourceTree = "<group>";
@@ -272,6 +285,7 @@
 				4DE0E5E31D2A6FB40051FF02 /* bridge.js in Resources */,
 				4DE0E5B21D264D260051FF02 /* Assets.xcassets in Resources */,
 				4DE0E5B01D264D260051FF02 /* Main.storyboard in Resources */,
+				4D235A501D33450F00CE4456 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +315,8 @@
 				4DE0E5DB1D2A329E0051FF02 /* JOBJavaScriptCoreContext.m in Sources */,
 				4DE0E5AA1D264D250051FF02 /* AppDelegate.m in Sources */,
 				4DE0E5A71D264D250051FF02 /* main.m in Sources */,
+				4D235A4E1D3342BB00CE4456 /* JOBApp.m in Sources */,
+				4D235A4B1D3342AB00CE4456 /* JOBTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

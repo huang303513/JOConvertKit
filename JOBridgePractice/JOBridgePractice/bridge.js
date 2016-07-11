@@ -63,7 +63,7 @@ var __JOBModels = {};
     //把OC的类方法与对应JS对象的类方法设置好
     function setClassMethod(module, method, setting) {
         module[method] = function() {
-            __JOBContextSend("callInstanceMethod", [this.tag, method, convertArguments(arguments)]);
+            __JOBContextSend("callClassMethod", [module.moduleName, method, convertArguments(arguments)]);
         }
     }
     //把OC的实例方法与对应JS对象的实例方法设置好

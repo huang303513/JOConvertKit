@@ -15,3 +15,13 @@
 -(void)mapInstance:(id<JOBExport>)instance moduleName:(NSString *)moduleName;
 -(void)triggerEvent:(id<JOBExport>)instance name:(NSString *)name data:(id)data;
 @end
+
+
+@interface JOBModuleMirror : NSObject
++(instancetype)moduleMirrorFromInstance:(id<JOBExport>)instance;
+@property (nonatomic, assign, readonly) long long tag;
+//要转换的实例
+@property (nonatomic, weak, readonly) id<JOBExport> instance;
+@property (nonatomic, weak, readonly) JOBBridge *bridge;
+-(id)initWithTag:(long long)tag instance:(id<JOBExport>) instance bridge:(JOBBridge *)bridge;
+@end
