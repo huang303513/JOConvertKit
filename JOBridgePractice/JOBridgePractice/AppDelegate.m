@@ -23,13 +23,13 @@
     
     JOBJavaScriptCoreContext *ctx = [[JOBJavaScriptCoreContext alloc]init];
     [ctx execScript:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"bridge" withExtension:@"js"]] sourceURL:[NSURL URLWithString:@"bridge.js"] onComplete:^(NSError *error) {
-        NSLog(@"bridge文件执行错误: %@",error);
+        NSLog(@"bridge文件是否有错: %@",error);
     }];
     
     bridge = [[JOBBridge alloc]initWithContext:ctx];
     
     [ctx execScript:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"main" withExtension:@"js"]] sourceURL:[NSURL URLWithString:@"main.js"] onComplete:^(NSError *error) {
-        NSLog(@"main文件执行错误 %@", error);
+        NSLog(@"main文件是否有错 %@", error);
     }];
     
     JOBApp *myApp = [[JOBApp alloc] initWithDelegate:self];
