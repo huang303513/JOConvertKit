@@ -10,6 +10,7 @@
 #import "JOBBridge.h"
 #import "JOBJavaScriptCoreContext.h"
 #import "JOBApp.h"
+#import "ViewController.h"
 
 
 @interface AppDelegate ()<JOBAppDelegate>
@@ -35,7 +36,7 @@
     JOBApp *myApp = [[JOBApp alloc] initWithDelegate:self];
     [bridge mapInstance:myApp moduleName:@"MyApp"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *rootViewController = [UIViewController new];
+    UIViewController *rootViewController = [[UIViewController alloc]init];
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     

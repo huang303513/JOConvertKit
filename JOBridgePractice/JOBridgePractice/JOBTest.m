@@ -25,6 +25,11 @@
                    });
 }
 
+-(void)triggerEvent:(NSString *)name data:(NSDictionary *)data{
+
+
+}
+
 +(void)log:(NSArray *)data{
     NSLog(@"logTest %@, mainThead %d", data, [NSThread isMainThread]);
 }
